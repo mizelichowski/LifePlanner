@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+</head>
+<body>
+<div class="container" th:fragment="menu">
+    <div data-role="appbar" data-expand-point="md">
+        <ul class="app-bar-menu">
+            <li><a href="/home">Home</a></li>
+            <li>
+                <a href="time/index" class="dropdown-toggle">Time Management</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li><a href="#">My Timetable</a></li>
+                    <li><a href="#">Add event</a></li>
+                    <li class="divider bg-lightGray"></li>
+                    <li><a href="#">XYZ</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Money Management</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li><a href="#">My Finances</a></li>
+                    <li><a href="#">XYZ</a></li>
+                    <li class="divider bg-lightGray"></li>
+                    <li><a href="#">ZYX</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">Other Management</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li><a href="#">ABC</a></li>
+                    <li><a href="#">CDE</a></li>
+                    <li class="divider bg-lightGray"></li>
+                    <li><a href="#">EFH</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</body>
+</html>
