@@ -17,4 +17,9 @@ public class MoneyController {
     public String expenditure() {
         return "/money/expenditure";
     }
+
+    @GetMapping(value = "/earnings")
+    public String earnings() {
+        return "/money/earnings";
+    }
 }
